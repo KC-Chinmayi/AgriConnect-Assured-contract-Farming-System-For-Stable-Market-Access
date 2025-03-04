@@ -1,0 +1,115 @@
+/* Container */
+.company-details-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* Header Section */
+  .details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .job-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .badges-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .badge-blue {
+    background-color: #e0f7fa;
+    color: #00796b;
+    font-weight: bold;
+  }
+  
+  .badge-red {
+    background-color: #ffebee;
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  .badge-purple {
+    background-color: #ede7f6;
+    color: #512da8;
+    font-weight: bold;
+  }
+  
+  /* Apply Button */
+  .apply-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .apply-now {
+    background-color: #512da8;
+    color: white;
+  }
+  
+  .apply-now:hover {
+    background-color: #4527a0;
+  }
+  
+  .applied-disabled {
+    background-color: #9e9e9e;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  /* Job Description */
+  .description-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description-container {
+    line-height: 1.8;
+  }
+  
+  .description-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description-item span {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .details-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .apply-button {
+      align-self: stretch;
+    }
+  
+    .description-header {
+      font-size: 1.3rem;
+    }
+  
+    .description-item {
+      font-size: 1rem;
+    }
+  }
+  

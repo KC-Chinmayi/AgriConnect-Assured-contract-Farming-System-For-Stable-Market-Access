@@ -1,0 +1,30 @@
+.mission-section {
+    padding: 50px;
+    background-color: #eef4ed;
+    text-align: center;
+  }
+  
+  .mission-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+  }
+  
+  .mission-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .mission-section h2 {
+      font-size: 2rem;
+    }
+  
+    .mission-section p {
+      font-size: 1rem;
+    }
+  }
+  

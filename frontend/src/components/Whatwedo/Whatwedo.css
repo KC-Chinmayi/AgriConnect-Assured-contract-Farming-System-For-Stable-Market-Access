@@ -1,0 +1,51 @@
+.what-we-do-section {
+    padding: 50px;
+    background-color: #e8f5e9;
+    text-align: center;
+  }
+  
+  .what-we-do-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+  }
+  
+  .what-we-do-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .service {
+    max-width: 300px;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      margin-bottom: 20px;
+    }
+  }
+  
