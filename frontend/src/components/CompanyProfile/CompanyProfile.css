@@ -1,0 +1,109 @@
+/* Overall card styling */
+.company-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  gap: 15px; /* Add spacing between sections */
+  width: 100dvh; /* Make it responsive */
+  max-width: 800px;
+  margin: 0 auto; /* Center the card */
+  margin-bottom:20px;
+ 
+}
+
+/* Company logo */
+.company-logo {
+  flex-shrink: 0; /* Prevent logo from resizing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.company-logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make logo circular */
+}
+
+/* Company details */
+.company-details {
+  flex: 1;
+  font-size: 14px;
+}
+
+.company-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.company-location {
+  color: gray;
+  font-size: 13px;
+}
+
+/* Job details */
+.job-info {
+  text-align: right;
+  flex: 1;
+}
+
+.job-crop {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.job-price {
+  color: gray;
+  font-size: 13px;
+}
+
+.job-badges {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  flex-wrap: wrap; /* Wrap badges if they exceed the width */
+}
+
+/* Action buttons */
+.job-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.job-actions button {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.save-btn {
+  background-color: #7209b7;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 750px) {
+  .company-card {
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .job-info, .job-actions {
+    text-align: left;
+    width: 100%;
+  }
+
+  .job-badges {
+    justify-content: flex-start;
+  }
+}

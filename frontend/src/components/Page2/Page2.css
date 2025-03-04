@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.pagebody {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-image: url('/src/components/assets/bg4.jpg'); /* Replace with your image path */
+  background-size: cover;
+  overflow-x: hidden;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container h1 {
+  color: black;
+  font-size: 70px;
+}
+
+.navbar {
+  width: 100%; /* Full width for the navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure the navbar is above other elements */
+}
+
+.company-list {
+  margin-top: 80px; /* Adjust spacing based on navbar height */
+}
+
+@media (max-width: 900px) {
+  .navbar {
+      width: 100vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar {
+      width: 100vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+      width: 100vw;
+  }
+}
